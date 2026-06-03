@@ -48,6 +48,14 @@ client.on('qr', (qr) => {
   // Generate and print the QR code in the terminal
   console.log('\n--- SCAN THIS QR CODE WITH YOUR WHATSAPP ---\n');
   qrcode.generate(qr, { small: true });
+  
+  console.log('\n--- IF THE QR CODE ABOVE IS BROKEN, USE THIS ---');
+  console.log('1. Copy the long text below');
+  console.log('2. Go to https://www.the-qrcode-generator.com/');
+  console.log('3. Paste the text into the "Enter your text" box');
+  console.log('4. Scan the clean QR code it generates for you!\n');
+  console.log(qr);
+  console.log('\n-------------------------------------------------\n');
 });
 
 client.on('ready', () => {
