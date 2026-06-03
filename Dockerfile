@@ -11,6 +11,7 @@ COPY package*.json ./
 
 # Install dependencies
 RUN npm install
+RUN npx puppeteer browsers install chrome
 
 # Copy source code
 COPY . .
